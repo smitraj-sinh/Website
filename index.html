@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Hunt - Premium Automobiles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Car Hunt</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search cars...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#brands">Brands</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero">
+            <h1>Welcome to Car Hunt</h1>
+            <p>Discover Premium Automobiles</p>
+        </div>
+    </header>
+
+    <section id="categories" class="categories">
+        <h2>Car Categories</h2>
+        <div class="category-grid">
+            <div class="category-card" data-category="new">
+                <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738" alt="New Cars">
+                <h3>New Cars</h3>
+            </div>
+            <div class="category-card" data-category="preowned">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888" alt="Pre-owned Cars">
+                <h3>Pre-owned Cars</h3>
+            </div>
+            <div class="category-card" data-category="imported">
+                <img src="https://wallpapers.com/images/hd/dodge-challenger-4k-odyboww4nlc1oaow.jpg" alt="Imported Cars">
+                <h3>Imported Cars</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="car-listings" class="car-listings">
+        <div class="filters">
+            <select id="typeFilter">
+                <option value="all">All Types</option>
+                <option value="muscle">Muscle Cars</option>
+                <option value="luxury">Luxury Cars</option>
+                <option value="sports">Sports Cars</option>
+                <option value="suv">Premium SUVs</option>
+            </select>
+            <select id="priceFilter">
+                <option value="all">All Prices</option>
+                <option value="0-5000000">Under ₹50 Lakhs</option>
+                <option value="5000000-10000000">₹50 Lakhs - 1 Crore</option>
+                <option value="10000000+">Above 1 Crore</option>
+            </select>
+        </div>
+        <div class="car-grid" id="carGrid">
+            <!-- Cars will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@carhunt.com</p>
+                <p>Phone: +91 1234567890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Car Hunt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
